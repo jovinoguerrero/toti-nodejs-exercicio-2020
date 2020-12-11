@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -10,22 +10,26 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
-     *
     */
 
-    await queryInterface.bulkInsert('Tasks', [{
-      description: 'Batata',
-      done: false,
+    await queryInterface.bulkInsert('Fruits', [{
+      name: 'banana',
+      fruit_type: 'tropical',
+      fruit_color: 'amarela',
       createdAt: new Date(),
       updatedAt: new Date()
-    }, {
-      description: 'Cenoura',
-      done: false,
+    },
+    {
+      name: 'abacate',
+      fruit_type: 'subtropical',
+      fruit_color: 'verde',
       createdAt: new Date(),
       updatedAt: new Date()
-    }, {
-      description: 'Maçãs',
-      done: true,
+    },
+    {
+      name: 'maça',
+      fruit_type: 'pseudofruto',
+      fruit_color: 'vermelha',
       createdAt: new Date(),
       updatedAt: new Date()
     }])
@@ -39,4 +43,4 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
   }
-}
+};

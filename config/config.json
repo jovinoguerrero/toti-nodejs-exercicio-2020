@@ -1,7 +1,7 @@
 {
   "development": {
-    "database": "task-list",
-    "storage": "task-list.db",
+    "database": "fruit-list",
+    "storage": "fruit-list.db",
     "dialect": "sqlite"
   },
   "test": {
